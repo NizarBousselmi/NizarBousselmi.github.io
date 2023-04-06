@@ -2,124 +2,56 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nizar Bousselmi</title>
-	<style>
-		body {
-			font-family: sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		
-		header {
-			background-color: #333;
-			color: #fff;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			padding: 10px 20px;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-		}
-		
-		header h1 {
-			font-size: 24px;
-			font-weight: normal;
-			margin: 0;
-			padding: 0;
-		}
-		
-		nav {
-			display: flex;
-			align-items: center;
-			justify-content: space-around;
-			width: 50%;
-		}
-		
-		nav a {
-			color: #fff;
-			text-decoration: none;
-			font-size: 16px;
-			margin: 0 10px;
-			transition: color 0.2s;
-		}
-		
-		nav a:hover {
-			color: #ccc;
-		}
-		
-		.container {
-			margin-top: 80px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: flex-start;
-			padding: 20px;
-		}
-		
-		.container img {
-			max-width: 100%;
-			height: auto;
-			margin-right: 20px;
-		}
-		
-		.container .bio {
-			flex: 2;
-			margin-right: 20px;
-		}
-		
-		.container .bio h2 {
-			font-size: 24px;
-			margin-top: 0;
-		}
-		
-		.container .bio p {
-			margin: 0;
-		}
-		
-		.container .bio ul {
-			margin: 0;
-			padding-left: 20px;
-		}
-		
-		.container .bio ul li {
-			margin: 10px 0;
-		}
-		
-		.container .news {
-			flex: 1;
-			background-color: #f1f1f1;
-			padding: 20px;
-		}
-		
-		.container .news h2 {
-			font-size: 24px;
-			margin-top: 0;
-		}
-		
-		.container .news p {
-			margin: 0;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
 		<h1>Nizar Bousselmi</h1>
 		<nav>
-			<a href="#">Home</a>
-			<a href="#">Publications</a>
-			<a href="#">Teaching</a>
-			<a href="#">Contact</a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Publications</a></li>
+				<li><a href="#">Teaching</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
 		</nav>
 	</header>
-	<div class="container">
-		<div class="image">
-			<img src="pp.jpg" alt="Nizar Bousselmi">
-			<div class="icons">
-				<a href="mailto:nizar.bousselmi@uclouvain.be"><img src="mail.png" alt="Mail"></a>
-				<a href="todo1.com"><img src="scholar.png" alt="Scholar"></a>
+	<main>
+		<div class="left">
+			<img src="pp.JPG" alt="Nizar Bousselmi">
+			<h2>PhD student in Convex Optimization</h2>
+			<div class="location">
+				<a href="https://uclouvain.be/fr/index.html" target="_blank"><img src="location-icon.png" alt="Location"></a>
+				<p>UCLouvain, Belgium</p>
+			</div>
+			<div class="contact-icons">
+				<a href="mailto:nizar.bousselmi@uclouvain.be"><img src="email-icon.png" alt="Email"></a>
+				<a href="todo1.com"><img src="scholar-icon.png" alt="Google Scholar"></a>
 			</div>
 		</div>
-		<div class="bio">
-			<h2>Biography</h2>
+		<div class="right">
+			<section>
+				<h2>Biography</h2>
+				<p>I am a research in convex optimization ...</p>
+			</section>
+			<section>
+				<h2>Research interests</h2>
+				<ul>
+					<li>Convex optimization</li>
+					<li>Performance estimation</li>
+					<li>Optimization of composed functions</li>
+				</ul>
+			</section>
+			<section>
+				<h2>News</h2>
+				<p>todo</p>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2023 Nizar Bousselmi</p>
+	</footer>
+</body>
+</html>
