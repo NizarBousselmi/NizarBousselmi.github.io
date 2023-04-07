@@ -107,3 +107,7 @@ img {
 .icons {
   font-size: 30px;
 }
+
+body {
+  margin-left: 10px; /* replace 10px with the value you want */
+}
