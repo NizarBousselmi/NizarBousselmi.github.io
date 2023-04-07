@@ -103,3 +103,7 @@ img {
 .active {
   background-color: #4CAF50;
 }
+
+.icons {
+  font-size: 30px;
+}
